@@ -7,15 +7,7 @@
 # All rights reserved - Do Not Redistribute
 
 # Deside the package name based on the node platform
-package_name = ''
-package 'Install Apache' do
-  case node[:platform]
-  when 'redhat', 'centos'
-    package_name 'httpd'
-  when 'ubuntu', 'debian'
-    package_name 'apache2'
-  end
-end
+package_name = 'httpd'
 
 package package_name do
   action :install
