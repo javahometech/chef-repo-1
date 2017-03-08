@@ -19,5 +19,5 @@ service package_name do
 end
 # create index.html on apache server
 file '/var/www/html/index.html' do
-   content '<h1>Deployed by Chef</h1>'
+   content '<h1>Deployed by Chef Version-2</h1>'
 end
